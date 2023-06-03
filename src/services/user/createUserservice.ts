@@ -1,5 +1,5 @@
 import prismaClient from '../../prisma'
-import { hash } from 'bcryptjs';
+import { hash } from 'bcryptjs'
 
 interface UserRequest{
   name: string;
@@ -40,6 +40,7 @@ class CreateUserService{
         email: true,
       }
     })
+
 
     return user;
   }
